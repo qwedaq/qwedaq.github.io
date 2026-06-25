@@ -1,55 +1,65 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import service from '../data/service.json';
+import '../styles/academic-service.css';
 ---
 <BaseLayout
   title="Academic Service | Aveen Dayal"
   description="Peer review, teaching, invited instruction, workshop organization, and academic service by Aveen Dayal."
 >
-  <section class="page-hero section-shell service-hero">
-    <div data-reveal>
-      <p class="eyebrow">Academic Service</p>
-      <h1>Contributing through review, teaching, and research exchange.</h1>
-      <p class="page-lead">Service across peer review, university teaching, professional instruction, and international research workshops.</p>
-    </div>
-  </section>
-
-  <section class="service-section section-shell">
-    <div class="service-index" data-reveal><span>01</span><h2>Peer Review</h2></div>
-    <div class="service-content" data-reveal>
-      <div class="venue-group">
-        <h3>Conferences</h3>
-        <div class="venue-chips">{service.conferences.map((venue) => <span>{venue}</span>)}</div>
+  <div class="academic-service-page">
+    <section class="page-hero section-shell service-hero">
+      <div data-reveal>
+        <p class="eyebrow">Academic Service</p>
+        <h1>Contributing through review, teaching, and research exchange.</h1>
+        <p class="page-lead">Service across peer review, university teaching, professional instruction, and international research workshops.</p>
       </div>
-      <div class="venue-group">
-        <h3>Journals</h3>
-        <div class="venue-chips">{service.journals.map((venue) => <span>{venue}</span>)}</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="service-tinted">
-    <div class="section-shell service-section">
-      <div class="service-index" data-reveal><span>02</span><h2>Teaching & Instruction</h2></div>
-      <div class="teaching-grid" data-reveal>
-        {service.teaching.map((item) => (
-          <article class="teaching-card">
-            <p class="card-role">{item.role}</p>
-            <h3>{item.title}</h3>
-            <p>{item.context}</p>
-            {item.period && <time>{item.period}</time>}
-          </article>
+    <section class="service-section section-shell">
+      <div class="service-index" data-reveal><span>01</span><h2>Peer Review</h2></div>
+      <div class="service-content review-directory" data-reveal>
+        <section class="review-group" aria-labelledby="review-conferences">
+          <h3 id="review-conferences">Conferences</h3>
+          <ul class="review-list">
+            {service.conferences.map((venue) => <li>{venue}</li>)}
+          </ul>
+        </section>
+        <section class="review-group" aria-labelledby="review-journals">
+          <h3 id="review-journals">Journals</h3>
+          <ul class="review-list">
+            {service.journals.map((venue) => <li>{venue}</li>)}
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="service-tinted">
+      <div class="section-shell service-section">
+        <div class="service-index" data-reveal><span>02</span><h2>Teaching &amp; Instruction</h2></div>
+        <ol class="teaching-list" data-reveal>
+          {service.teaching.map((item, index) => (
+            <li class="teaching-entry">
+              <span class="teaching-entry-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+              <div class="teaching-entry-copy">
+                <p class="teaching-role">{item.role}</p>
+                <h3>{item.title}</h3>
+                <p class="teaching-context">{item.context}</p>
+              </div>
+              {item.period && <time class="teaching-period">{item.period}</time>}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <section class="service-section section-shell">
+      <div class="service-index" data-reveal><span>03</span><h2>Workshops, Talks &amp; Organization</h2></div>
+      <ol class="organization-list" data-reveal>
+        {service.organization.map((item, index) => (
+          <li><span>{String(index + 1).padStart(2, '0')}</span><p>{item}</p></li>
         ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="service-section section-shell">
-    <div class="service-index" data-reveal><span>03</span><h2>Workshops, Talks & Organization</h2></div>
-    <ol class="organization-list" data-reveal>
-      {service.organization.map((item, index) => (
-        <li><span>{String(index + 1).padStart(2, '0')}</span><p>{item}</p></li>
-      ))}
-    </ol>
-  </section>
+      </ol>
+    </section>
+  </div>
 </BaseLayout>
