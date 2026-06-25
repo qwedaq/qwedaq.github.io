@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import data from '../data/publications.json';
+interface Publication {
+  title: string;
+  authors: string;
+  venue: string;
+  year: number;
+  type: 'conference' | 'journal' | string;
+  citations: number | null;
+  doi?: string;
+  paper?: string;
+  code?: string;
+  project?: string;
+  scholar?: string;
+}
+const publications = [...(data.publications as Publication[])].sort((a, b) => b.year - a.year || (b.citations ?? -1) - (a.citations ?? -1) || a.title.localeCompare(b.title));
+const years = [...new Set(publications.map((publication) => publication.year))].sort((a, b) => b - a);
+const metric = (value: number | null) => value == null ? '—' : value.toLocaleString('en-IN');
+const authorParts = (authors: string) => authors.split(/(Aveen Dayal|A\. Dayal)/g);
+const synced = data.profile.lastSynced ? new Date(data.profile.lastSynced).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Pending first sync';
+const needsSync = data.metrics.citations == null || data.metrics.hIndex == null;
+---
+<BaseLayout
+  title="Publications | Aveen Dayal"
+  description="Publications by Aveen Dayal across reliable multimodal and generative AI, domain adaptation, domain generalization, autonomous systems, and applied deep learning."
+>
+  <section class="page-hero section-shell publications-hero">
+    <div data-reveal>
+      <p class="eyebrow">Research output</p>
+      <h1>Publications</h1>
+      <p class="page-lead">Research across reliable multimodal and generative AI, generalization, adaptation, autonomous systems, and applied deep learning.</p>
+    </div>
+    <a class="button button-secondary" href={data.profile.scholarUrl} target="_blank" rel="noreferrer">Open Google Scholar <span aria-hidden="true">↗</span></a>
+  </section>
+
+  <section class="publications-layout section-shell">
+    <aside class="publication-metrics" aria-label="Google Scholar metrics" data-reveal>
+      <p class="metrics-kicker">Google Scholar</p>
+      <div class="metric-card">
+        <strong>{metric(data.metrics.citations)}</strong>
+        <span>Total citations</span>
+      </div>
+      <div class="metric-card">
+        <strong>{metric(data.metrics.hIndex)}</strong>
+        <span>h-index</span>
+      </div>
+      <div class="metric-card">
+        <strong>{publications.length}</strong>
+        <span>Publications shown</span>
+      </div>
+      <div class="metric-card metric-sync">
+        <strong>{synced}</strong>
+        <span>Last synchronized</span>
+      </div>
+      {needsSync && (
+        <p class="metrics-note">Live citation and h-index values appear after the first successful Scholar synchronization workflow.</p>
+      )}
+    </aside>
+
+    <div class="publications-main">
+      <div class="publication-controls" data-reveal>
+        <div class="year-filters" role="group" aria-label="Filter publications by year">
+          <button class="is-active" type="button" data-year="all" aria-pressed="true">All years</button>
+          {years.map((year) => <button type="button" data-year={year} aria-pressed="false">{year}</button>)}
+        </div>
+        <label>
+          <span>Sort</span>
+          <select data-sort>
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="publication-list" data-publication-list data-reveal>
+        {publications.map((publication) => (
+          <article class="publication-card" data-year={publication.year} data-title={publication.title} data-citations={publication.citations ?? -1}>
+            <div class="publication-year">{publication.year}</div>
+            <div class="publication-content">
+              <h2>{publication.title}</h2>
+              <p class="publication-authors">{authorParts(publication.authors).map((part) => /^(Aveen Dayal|A\. Dayal)$/.test(part) ? <strong>{part}</strong> : part)}</p>
+              <p class="publication-venue">{publication.venue}</p>
+              <div class="publication-meta">
+                {publication.citations != null && <span>Cited by {publication.citations}</span>}
+                <span>{publication.type === 'journal' ? 'Journal article' : publication.type === 'conference' ? 'Conference paper' : 'Publication'}</span>
+              </div>
+              <div class="publication-links">
+                {publication.paper && <a href={publication.paper} target="_blank" rel="noreferrer">Paper</a>}
+                {publication.doi && <a href={`https://doi.org/${publication.doi}`} target="_blank" rel="noreferrer">DOI</a>}
+                {publication.code && <a href={publication.code} target="_blank" rel="noreferrer">Code</a>}
+                {publication.project && <a href={publication.project} target="_blank" rel="noreferrer">Project</a>}
+                <a href={publication.scholar ?? data.profile.scholarUrl} target="_blank" rel="noreferrer">Scholar</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <noscript><p class="noscript-note">Year filtering and sort controls require JavaScript. The complete publication list is still visible.</p></noscript>
+    </div>
+  </section>
+
+  <script>
+    const filters = Array.from(document.querySelectorAll('[data-year]')).filter((element) => element.tagName === 'BUTTON');
+    const cards = Array.from(document.querySelectorAll('.publication-card'));
+    const list = document.querySelector('[data-publication-list]');
+    const sort = document.querySelector<HTMLSelectElement>('[data-sort]');
+    let activeYear = 'all';
+
+    const render = () => {
+      cards.forEach((card) => {
+        card.hidden = activeYear !== 'all' && card.getAttribute('data-year') !== activeYear;
+      });
+      const direction = sort?.value === 'oldest' ? 1 : -1;
+      const ordered = [...cards].sort((a, b) => {
+        const yearDifference = Number(a.getAttribute('data-year')) - Number(b.getAttribute('data-year'));
+        if (yearDifference !== 0) return yearDifference * direction;
+        const citationDifference = Number(b.getAttribute('data-citations')) - Number(a.getAttribute('data-citations'));
+        if (citationDifference !== 0) return citationDifference;
+        return (a.getAttribute('data-title') || '').localeCompare(b.getAttribute('data-title') || '');
+      });
+      ordered.forEach((card) => list?.appendChild(card));
+    };
+
+    filters.forEach((button) => button.addEventListener('click', () => {
+      activeYear = button.getAttribute('data-year') || 'all';
+      filters.forEach((entry) => {
+        const active = entry === button;
+        entry.classList.toggle('is-active', active);
+        entry.setAttribute('aria-pressed', String(active));
+      });
+      render();
+    }));
+    sort?.addEventListener('change', render);
+  </script>
+</BaseLayout>

@@ -1,0 +1,89 @@
+name: Quarterly Google Scholar sync
+
+on:
+  schedule:
+    # Runs monthly to keep scheduled workflows active. The script queries Scholar
+    # only in January, April, July, and October.
+    - cron: '17 8 1 * *'
+      timezone: 'Asia/Kolkata'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: scholar-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      publication_changed: ${{ steps.changes.outputs.publication_changed }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Synchronize Google Scholar data
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 scripts/sync_scholar.py --force
+          else
+            python3 scripts/sync_scholar.py
+          fi
+
+      - name: Maintain monthly workflow activity
+        run: |
+          mkdir -p .github
+          date -u +'%Y-%m' > .github/scholar-heartbeat
+
+      - name: Detect publication changes
+        id: changes
+        run: |
+          if git diff --quiet -- src/data/publications.json; then
+            echo "publication_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "publication_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit synchronized data or heartbeat
+        run: |
+          git config user.name "publication-sync[bot]"
+          git config user.email "publication-sync[bot]@users.noreply.github.com"
+          git add src/data/publications.json .github/scholar-heartbeat
+          git diff --cached --quiet || git commit -m "chore: refresh publication metadata"
+          git push
+
+  build:
+    if: needs.sync.outputs.publication_changed == 'true'
+    needs: sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout synchronized repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Validate structured content
+        run: python3 scripts/validate_data.py
+      - name: Install, build, and upload Astro site
+        uses: withastro/action@v6
+        with:
+          package-manager: npm@latest
+
+  deploy:
+    if: needs.sync.outputs.publication_changed == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy synchronized site
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,176 @@
+[
+  {
+    "date": "06/2026",
+    "year": 2026,
+    "category": "Publication",
+    "text": "A paper was published at the Conference on Computer Vision and Pattern Recognition  (CVPR 2026). Congratulation to all the co-authors for their contributions."
+  },
+  {
+    "date": "03/2026",
+    "year": 2026,
+    "category": "Publication",
+    "text": "A paper was published at the Winter Conference on Applications of Computer Vision (WACV 2026). Congratulation to all the co-authors for their contributions."
+  },
+  {
+    "date": "12/2025",
+    "year": 2025,
+    "category": "Milestone",
+    "text": "Successfully defended my Ph.D. Thesis titled \"Adaptability and Generalizability of Deep Learning Models\". Very grateful to all my mentors, collaborators, friends and family for their guidance and support throughout my Ph.D. journey."
+  },
+  {
+    "date": "09/2025",
+    "year": 2025,
+    "category": "Experience",
+    "text": "Joined Dolby Advanced Technology Group India as a Senior Multimodal AI Researcher."
+  },
+  {
+    "date": "08/2025",
+    "year": 2025,
+    "category": "Experience",
+    "text": "Completed my internship at Adobe Research India. Very grateful to my mentor, Dr. Joseph K. J., for giving me the opportunity to work on exciting multimodal generation research problem."
+  },
+    {
+    "date": "01/2025",
+    "year": 2025,
+    "category": "Publication",
+    "text": "A paper was accepted in the IEEE Transactions on Image Processing journal. Congratulation to all the co-authors for their contributions."
+  },
+  {
+    "date": "12/2024",
+    "year": 2024,
+    "category": "Experience",
+    "text": "Completed my internship at Microsoft Research India. Very grateful to my mentor, Dr. Akshay Nambi, for giving me the opportunity to work on exciting inference optimization and multimodal adaptation research problem."
+  },
+  {
+    "date": "07/2024",
+    "year": 2024,
+    "category": "Publication",
+    "text": "A paper was accepted at the European Conference on Computer Vision (ECCV 2024). Congratulation to all the co-authors for their contributions."
+  },
+  {
+    "date": "07/2024",
+    "year": 2024,
+    "category": "Recognition",
+    "text": "MADG: Margin-based Adversarial Learning for Domain Generalization was listed among ACM IKDD Premier Papers published from India."
+  },
+  {
+    "date": "03/2024",
+    "year": 2024,
+    "category": "Award",
+    "text": "Received the Excellence in Research Award 2024 from IIT Hyderabad."
+  },
+  {
+    "date": "10/2023",
+    "year": 2023,
+    "category": "Publication",
+    "text": "A paper was accepted at the IEEE International Symposium on Smart Electronic Systems (IEEE-iSES 2023)."
+  },
+  {
+    "date": "10/2023",
+    "year": 2023,
+    "category": "Award",
+    "text": "Received a Microsoft Research Travel Grant to attend NeurIPS 2023 in the United States."
+  },
+  {
+    "date": "09/2023",
+    "year": 2023,
+    "category": "Publication",
+    "text": "MADG was accepted at the Conference on Neural Information Processing Systems (NeurIPS 2023)."
+  },
+  {
+    "date": "07/2023",
+    "year": 2023,
+    "category": "Teaching",
+    "text": "Began PMRF teaching activities for the NPTEL course Deep Learning for Computer Vision."
+  },
+  {
+    "date": "07/2023",
+    "year": 2023,
+    "category": "Service",
+    "text": "Served as a reviewer for Applied Soft Computing."
+  },
+  {
+    "date": "07/2023",
+    "year": 2023,
+    "category": "Publication",
+    "text": "A paper was accepted in IEEE Access."
+  },
+  {
+    "date": "06/2023",
+    "year": 2023,
+    "category": "Talk",
+    "text": "Presented research at the 3rd INMOST Workshop on Indo-Norwegian Collaboration in Intelligent Offshore Mechatronics Systems, University of Agder, Norway."
+  },
+  {
+    "date": "03/2023",
+    "year": 2023,
+    "category": "Experience",
+    "text": "Began a research internship at the Autonomous and Cyber-Physical Systems Lab, University of Agder."
+  },
+  {
+    "date": "01/2023",
+    "year": 2023,
+    "category": "Publication",
+    "text": "A paper was accepted in IEEE Sensors Journal."
+  },
+  {
+    "date": "11/2022",
+    "year": 2022,
+    "category": "Service",
+    "text": "Served as a reviewer for IEEE Sensors Journal."
+  },
+  {
+    "date": "10/2022",
+    "year": 2022,
+    "category": "Organization",
+    "text": "Served on the organizing committee of the Indo–Norway Workshop on Smart Sensing, Communication and Machine Learning for Autonomous and Cyber Physical Systems at IIT Hyderabad."
+  },
+  {
+    "date": "08/2022",
+    "year": 2022,
+    "category": "Teaching",
+    "text": "Began PMRF teaching activities on Foundations of Machine Learning at B. V. Raju Institute of Technology."
+  },
+  {
+    "date": "06/2022",
+    "year": 2022,
+    "category": "Publication",
+    "text": "A paper was accepted in Applied Soft Computing."
+  },
+  {
+    "date": "06/2022",
+    "year": 2022,
+    "category": "Service",
+    "text": "Served as a reviewer for Sādhanā."
+  },
+  {
+    "date": "05/2022",
+    "year": 2022,
+    "category": "Milestone",
+    "text": "Completed Ph.D. coursework with a GPA of 9.19/10."
+  },
+  {
+    "date": "04/2022",
+    "year": 2022,
+    "category": "Award",
+    "text": "Received the Prime Minister’s Research Fellowship (PMRF)."
+  },
+  {
+    "date": "03/2022",
+    "year": 2022,
+    "category": "Publication",
+    "text": "A paper was accepted in the Journal of the Acoustical Society of America."
+  },
+  {
+    "date": "07/2021",
+    "year": 2021,
+    "category": "Milestone",
+    "text": "Joined the Department of Artificial Intelligence at IIT Hyderabad as a Ph.D. scholar."
+  },
+  {
+    "date": "01/2020",
+    "year": 2020,
+    "category": "Experience",
+    "text": "Joined the Autonomous and Cyber-Physical Systems Lab at the University of Agder as a visiting researcher."
+  }
+]

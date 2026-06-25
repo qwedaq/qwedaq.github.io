@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile } from '../data/profile';
+---
+<BaseLayout
+  title="CV | Aveen Dayal"
+  description="Curriculum vitae of Aveen Dayal, Senior Multimodal AI Researcher."
+>
+  <section class="page-hero section-shell cv-hero">
+    <div data-reveal>
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>Research, experience, education, and selected work.</h1>
+      <p class="page-lead">The embedded viewer is optimized for desktop. On mobile, use the full-screen or download buttons.</p>
+      <p class="cv-updated">Last updated: {profile.cvUpdated}</p>
+    </div>
+    <div class="button-row" data-reveal>
+      <a class="button button-primary" href={profile.cv} download>Download PDF</a>
+      <a class="button button-secondary" href={profile.cv} target="_blank" rel="noreferrer">Open full-screen <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="cv-section section-shell" data-reveal>
+    <object class="cv-viewer" data={profile.cv} type="application/pdf">
+      <div class="cv-fallback">
+        <p>Your browser cannot display the embedded PDF.</p>
+        <a class="button button-primary" href={profile.cv}>Open the CV</a>
+      </div>
+    </object>
+  </section>
+</BaseLayout>

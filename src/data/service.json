@@ -1,0 +1,62 @@
+{
+  "conferences": [
+    "CVPR",
+    "ICCV",
+    "ECCV",
+    "NeurIPS",
+    "ICML",
+    "ICLR",
+    "Conference on Lifelong Learning Agents (CoLLAs)"
+  ],
+  "journals": [
+    "IEEE Transactions on Image Processing",
+    "IEEE Transactions on Information Forensics and Security",
+    "Pattern Recognition",
+    "Applied Soft Computing",
+    "IEEE Sensors Journal",
+    "Sādhanā"
+  ],
+  "teaching": [
+    {
+      "role": "Teaching Assistant",
+      "title": "Deep Learning for Computer Vision",
+      "context": "NPTEL",
+      "period": "2023–2025"
+    },
+    {
+      "role": "Teaching Assistant",
+      "title": "Visual Computing",
+      "context": "IIT Hyderabad",
+      "period": "2023"
+    },
+    {
+      "role": "Teaching Assistant",
+      "title": "Video Content Analysis",
+      "context": "IIT Hyderabad",
+      "period": "2022"
+    },
+    {
+      "role": "Instructor",
+      "title": "Foundations of Machine Learning",
+      "context": "Eight-session course for students and faculty at B. V. Raju Institute of Technology, Telangana",
+      "period": ""
+    },
+    {
+      "role": "Instructor",
+      "title": "Foundations of Machine Learning",
+      "context": "Eight-session course for students and faculty at Bharat Institute of Engineering and Technology, Telangana",
+      "period": ""
+    },
+    {
+      "role": "Instructor",
+      "title": "Foundations of Machine Learning and Deep Learning",
+      "context": "Eight-session Faculty Development Programme at Vardhaman College of Engineering, Telangana",
+      "period": ""
+    }
+  ],
+  "organization": [
+    "Member of the organizing committee for the Indo–Norway Workshop on Smart Sensing, Communication and Machine Learning for Autonomous and Cyber Physical Systems, IIT Hyderabad, 2022.",
+    "Invited to present research at the 3rd INMOST Workshop on Indo-Norwegian Collaboration in Intelligent Offshore Mechatronics Systems, University of Agder, Norway.",
+    "Delivered invited instructional sessions on foundations of machine learning and deep learning for students and faculty across engineering institutes in Telangana."
+  ]
+}

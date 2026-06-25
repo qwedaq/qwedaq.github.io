@@ -1,0 +1,182 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile } from '../data/profile';
+import { researchPillars } from '../data/research';
+import news from '../data/news.json';
+
+const recentNews = news.slice(0, 6);
+const archive = news.slice(6).reduce((groups, item) => {
+  const key = String(item.year);
+  (groups[key] ??= []).push(item);
+  return groups;
+}, {} as Record<string, typeof news>);
+const archiveYears = Object.keys(archive).sort((a, b) => Number(b) - Number(a));
+---
+<BaseLayout
+  title="Aveen Dayal | Reliable Multimodal and Generative AI"
+  description="Aveen Dayal is a Senior Multimodal AI Researcher working on reliable AI systems, model understanding, generalization, evaluation, content attribution, protection, and efficient inference."
+>
+  <section class="hero section-shell">
+    <div class="hero-copy" data-reveal>
+      <p class="eyebrow">Senior Multimodal AI Researcher</p>
+      <h1>Aveen <span>Dayal</span></h1>
+      <p class="hero-statement">Building AI systems that can be understood, evaluated, trusted, and deployed beyond controlled settings.</p>
+      <p class="hero-description">
+        I work across multimodal, generative, and language models, studying how their behaviour can be interpreted, how they generalize under distribution shift, how their outputs can be evaluated and attributed, and how inference can be made more efficient.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="#reliable-ai">Explore my research</a>
+        <a class="button button-secondary" href="/publications">View publications</a>
+        <a class="text-link" href={profile.cv} download>Download CV <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <div class="portrait-wrap" data-reveal>
+      <div class="portrait-offset" aria-hidden="true"></div>
+      <img class="portrait" src={profile.headshot} alt="Portrait of Aveen Dayal" width="1220" height="480" />
+      <div class="portrait-caption">
+        <span class="status-dot" aria-hidden="true"></span>
+        Bengaluru, India
+      </div>
+    </div>
+  </section>
+
+  <section id="reliable-ai" class="framework-section">
+    <div class="section-shell">
+      <div class="section-intro framework-intro" data-reveal>
+        <p class="eyebrow">Research framework</p>
+        <h2>Towards Reliable AI Systems</h2>
+        <p>
+          Reliability is not a single property of a model. It emerges when a system can be understood, remains dependable under changing conditions, is evaluated against meaningful criteria, supports attribution and protection of its outputs, and can operate within real deployment constraints.
+        </p>
+      </div>
+
+      <div class="framework" data-framework data-reveal>
+        <svg class="framework-lines" viewBox="0 0 1000 670" aria-hidden="true" preserveAspectRatio="none">
+          <path data-line="understand" d="M500 320 L500 110"></path>
+          <path data-line="generalize" d="M430 340 L205 340"></path>
+          <path data-line="evaluate" d="M570 340 L795 340"></path>
+          <path data-line="protect" d="M455 405 L285 555"></path>
+          <path data-line="optimize" d="M545 405 L715 555"></path>
+        </svg>
+
+        <button class="framework-core" type="button" aria-label="Reliable AI Systems: central research theme" data-core>
+          <span>Reliable</span>
+          <strong>AI Systems</strong>
+        </button>
+
+        {researchPillars.map((pillar) => (
+          <button class={`framework-node node-${pillar.id}`} type="button" data-pillar={pillar.id} aria-expanded="false">
+            <span class="node-index">{pillar.index}</span>
+            <strong>{pillar.title}</strong>
+            <span>{pillar.topics.join(' · ')}</span>
+          </button>
+        ))}
+
+        <div class="framework-detail" aria-live="polite" data-framework-detail>
+          <p class="detail-kicker">A connected research programme</p>
+          <h3>Reliable AI Systems</h3>
+          <p>Select a direction to see how it contributes to the broader reliability problem.</p>
+        </div>
+      </div>
+
+      <div class="framework-mobile" data-reveal>
+        <div class="mobile-core">Reliable AI Systems</div>
+        {researchPillars.map((pillar) => (
+          <details>
+            <summary><span>{pillar.index}</span><strong>{pillar.title}</strong></summary>
+            <p class="mobile-topics">{pillar.topics.join(' · ')}</p>
+            <p>{pillar.description}</p>
+          </details>
+        ))}
+      </div>
+
+      <div class="positioning-note" data-reveal>
+        <p>
+          Building truly reliable AI requires progress across several interconnected dimensions, and no single project—or researcher—can address them in isolation. My work has allowed me to study this broader problem from different perspectives: understanding model behaviour, improving generalization under distribution shift, designing more rigorous evaluation frameworks, tracing and protecting generated content, and making inference more efficient. These experiences have given me a broad foundation for examining how these pieces fit together, while I continue to deepen that understanding through research and collaboration.
+        </p>
+        <a class="text-link" href="/about">Read more about my journey <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-section section-shell">
+    <div class="section-heading" data-reveal>
+      <div>
+        <p class="eyebrow">News and milestones</p>
+        <h2>Recent updates</h2>
+      </div>
+      <p>A concise record of research, teaching, service, and career milestones.</p>
+    </div>
+
+    <div class="news-list" data-reveal>
+      {recentNews.map((item) => (
+        <article class="news-item">
+          <time>{item.date}</time>
+          <span class="news-category">{item.category}</span>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+
+    <details class="news-archive" data-reveal>
+      <summary>View earlier updates <span aria-hidden="true">+</span></summary>
+      <div class="archive-content">
+        {archiveYears.map((year) => (
+          <section class="archive-year">
+            <h3>{year}</h3>
+            <div>
+              {archive[year].map((item) => (
+                <article>
+                  <time>{item.date}</time>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </details>
+  </section>
+
+  <section class="contact-band">
+    <div class="section-shell contact-inner" data-reveal>
+      <p class="eyebrow">Research and collaboration</p>
+      <h2>Interested in reliable multimodal and generative AI?</h2>
+      <p>I am always glad to discuss research, collaboration, and emerging questions across model understanding, evaluation, and deployment.</p>
+      <div class="button-row">
+        <a class="button button-primary" href={`mailto:${profile.email}`}>Email me</a>
+        <a class="button button-secondary" href={profile.scholar} target="_blank" rel="noreferrer">Google Scholar</a>
+        <a class="text-link" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <script define:vars={{ pillars: researchPillars }}>
+    const framework = document.querySelector('[data-framework]');
+    const detail = document.querySelector('[data-framework-detail]');
+    if (framework && detail) {
+      const buttons = framework.querySelectorAll('[data-pillar]');
+      const lines = framework.querySelectorAll('[data-line]');
+      const reset = () => {
+        buttons.forEach((button) => button.setAttribute('aria-expanded', 'false'));
+        lines.forEach((line) => line.classList.remove('is-active'));
+        detail.innerHTML = '<p class="detail-kicker">A connected research programme</p><h3>Reliable AI Systems</h3><p>Select a direction to see how it contributes to the broader reliability problem.</p>';
+      };
+      buttons.forEach((button) => {
+        const activate = () => {
+          const id = button.getAttribute('data-pillar');
+          const pillar = pillars.find((entry) => entry.id === id);
+          if (!pillar) return;
+          buttons.forEach((entry) => entry.setAttribute('aria-expanded', String(entry === button)));
+          lines.forEach((line) => line.classList.toggle('is-active', line.getAttribute('data-line') === id));
+          detail.innerHTML = `<p class="detail-kicker">${pillar.topics.join(' · ')}</p><h3>${pillar.title}</h3><p>${pillar.description}</p>`;
+        };
+        button.addEventListener('click', activate);
+        button.addEventListener('mouseenter', activate);
+        button.addEventListener('focus', activate);
+      });
+      framework.addEventListener('mouseleave', reset);
+    }
+  </script>
+</BaseLayout>

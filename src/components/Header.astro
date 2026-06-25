@@ -1,0 +1,55 @@
+---
+import { profile } from '../data/profile';
+const pathname = Astro.url.pathname;
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/publications', label: 'Publications' },
+  { href: '/academic-service', label: 'Academic Service' }
+];
+const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
+---
+<header class="site-header" data-header>
+  <div class="nav-shell">
+    <a class="brand" href="/" aria-label={`${profile.name}, home`}>
+      <span class="brand-mark" aria-hidden="true">AD</span>
+      <span>{profile.name}</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="site-navigation" class="site-nav" aria-label="Primary navigation" data-navigation>
+      {links.map((link) => (
+        <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
+      ))}
+      <a class="nav-cv" href="/cv" aria-current={isActive('/cv') ? 'page' : undefined}>CV</a>
+      <button class="theme-button" type="button" aria-label="Toggle colour theme" data-theme-toggle>
+        <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+        <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuButton = document.querySelector('[data-menu-button]');
+  const navigation = document.querySelector('[data-navigation]');
+  menuButton?.addEventListener('click', () => {
+    const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!expanded));
+    navigation?.classList.toggle('is-open', !expanded);
+  });
+
+  const themeButton = document.querySelector('[data-theme-toggle]');
+  const applyTheme = (theme: string) => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+  };
+  themeButton?.addEventListener('click', () => {
+    const current = document.documentElement.dataset.theme || 'light';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+</script>

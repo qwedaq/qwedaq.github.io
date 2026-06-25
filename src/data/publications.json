@@ -1,0 +1,210 @@
+{
+  "profile": {
+    "authorId": "KqkN9IgAAAAJ",
+    "scholarUrl": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en",
+    "lastSynced": null,
+    "source": "Seeded from CV and previous website; quarterly sync replaces/enriches with Google Scholar data."
+  },
+  "metrics": {
+    "citations": null,
+    "hIndex": null,
+    "i10Index": null
+  },
+  "publications": [
+    {
+      "title": "Bridging the Domain Gap in Small Multimodal Models: A Dual-level Alignment Perspective",
+      "authors": "Aveen Dayal, P. Divya, N. Tiwari, Linga Reddy Cenkeramaddi, C. Krishna Mohan, Abhinav Kumar",
+      "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+      "year": 2026,
+      "type": "conference",
+      "citations": null,
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Foundation Model Priors Enhance Object Focus in Feature Space for Source-Free Object Detection",
+      "authors": "Sairam VCR, Rishabh Lalla, Aveen Dayal, Tejal Kulkarni, Anuj Lalla, Vineeth N. Balasubramanian, Muhammad Haris Khan",
+      "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "year": 2026,
+      "type": "conference",
+      "citations": null,
+      "paper": "https://arxiv.org/abs/2512.17514",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Leveraging Mixture Alignment for Multi-Source Domain Adaptation",
+      "authors": "Aveen Dayal, Shrusti S., Linga Reddy Cenkeramaddi, C. Krishna Mohan, Abhinav Kumar",
+      "venue": "IEEE Transactions on Image Processing",
+      "year": 2025,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/TIP.2025.3532094",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Improving Unsupervised Domain Adaptation: A Pseudo-Candidate Set Approach",
+      "authors": "Aveen Dayal, Rishabh Lalla, Linga Reddy Cenkeramaddi, C. Krishna Mohan, Abhinav Kumar, Vineeth N. Balasubramanian",
+      "venue": "European Conference on Computer Vision (ECCV)",
+      "year": 2024,
+      "type": "conference",
+      "citations": null,
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Vessel Type Classification utilizing Underwater Acoustic Data and Deep Learning",
+      "authors": "Nathala Sai Sree, Rakesh Reddy Yakkati, Aveen Dayal, M. Sabarimalai Manikandan, Jing Zhou, Linga Reddy Cenkeramaddi",
+      "venue": "19th IEEE Conference on Industrial Electronics and Applications (ICIEA)",
+      "year": 2024,
+      "type": "conference",
+      "citations": null,
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Classification of Anomalies in Industrial Machines utilizing Machine Sounds and Deep Learning",
+      "authors": "Nandam Sreevidya, Nathala Sai Sree, Aveen Dayal, M. Sabarimalai Manikandan, Jing Zhou, Linga Reddy Cenkeramaddi",
+      "venue": "19th IEEE Conference on Industrial Electronics and Applications (ICIEA)",
+      "year": 2024,
+      "type": "conference",
+      "citations": null,
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "MADG: Margin-based Adversarial Learning for Domain Generalization",
+      "authors": "Aveen Dayal, Vimal K. B., Linga Reddy Cenkeramaddi, C. Krishna Mohan, Abhinav Kumar, Vineeth N. Balasubramanian",
+      "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+      "year": 2023,
+      "type": "conference",
+      "citations": null,
+      "paper": "https://arxiv.org/abs/2311.08503",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Adversarial Unsupervised Domain Adaptation for Hand Gesture Recognition using Thermal Images",
+      "authors": "Aveen Dayal, M. Aishwarya, S. Abhilash, C. Krishna Mohan, Abhinav Kumar, Linga Reddy Cenkeramaddi",
+      "venue": "IEEE Sensors Journal",
+      "year": 2023,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/JSEN.2023.3235379",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Edge-Distributed Fusion of Camera-LiDAR for Robust Moving Object Localization",
+      "authors": "J. Amendola, Aveen Dayal, Linga Reddy Cenkeramaddi, A. Jha",
+      "venue": "IEEE Access",
+      "year": 2023,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/ACCESS.2023.3295212",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Motor Bearing Fault Classification using Laser Sensor and Light Weight CNN",
+      "authors": "R. Pretto, Aveen Dayal, Y. O. Haile, J. Amendola, Linga Reddy Cenkeramaddi, K. Robbersmyr, A. Jha",
+      "venue": "IEEE International Symposium on Smart Electronic Systems (IEEE-iSES)",
+      "year": 2023,
+      "type": "conference",
+      "citations": null,
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Reward Criteria Impact on the Performance of Reinforcement Learning Agent for Autonomous Navigation",
+      "authors": "Aveen Dayal, A. Jha, Linga Reddy Cenkeramaddi",
+      "venue": "Applied Soft Computing",
+      "year": 2022,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1016/j.asoc.2022.109241",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Lightweight deep convolution neural network for background sound classification in speech signals",
+      "authors": "Aveen Dayal, S. R. Yeduri, B. H. Koduru, R. K. Jaiswal, J. Soumya, M. B. Srinivas, O. J. Pandey, Linga Reddy Cenkeramaddi",
+      "venue": "Journal of the Acoustical Society of America",
+      "year": 2022,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1121/10.0010257",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Design and Implementation of Deep Learning Based Contactless Authentication System Using Hand Gestures",
+      "authors": "Aveen Dayal, N. Paluru, Linga Reddy Cenkeramaddi, J. Soumya, P. K. Yalavarthy",
+      "venue": "Electronics",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.3390/electronics10020182",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Anam-Net: Anamorphic Depth Embedding-Based Lightweight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images",
+      "authors": "N. Paluru, Aveen Dayal, H. B. Jenssen, T. Sakinis, Linga Reddy Cenkeramaddi, J. Prakash, P. K. Yalavarthy",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/TNNLS.2021.3054746",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Mini-COVIDNet: Efficient Light Weight Deep Neural Network for Ultrasound based Point-of-Care Testing of COVID-19",
+      "authors": "N. Awasthi, Aveen Dayal, Linga Reddy Cenkeramaddi, P. K. Yalavarthy",
+      "venue": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/TUFFC.2021.3068190",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Classification of targets using statistical features from range FFT of mmWave FMCW radars",
+      "authors": "J. Bhatia, Aveen Dayal, et al.",
+      "venue": "Electronics",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.3390/electronics10161965",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Robust Hand Gestures Recognition Using a Deep CNN and Thermal Images",
+      "authors": "D. S. Breland, Aveen Dayal, A. Jha, P. K. Yalavarthy, O. J. Pandey, Linga Reddy Cenkeramaddi",
+      "venue": "IEEE Sensors Journal",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/JSEN.2021.3119977",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Object Classification Technique for mmWave FMCW Radars using Range-FFT Features",
+      "authors": "J. Bhatia, Aveen Dayal, et al.",
+      "venue": "13th IEEE International Conference on COMmunication Systems & NETworkS (COMSNETS)",
+      "year": 2021,
+      "type": "conference",
+      "citations": null,
+      "doi": "10.1109/COMSNETS51098.2021.9352894",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "Deep Learning based Sign Language Digits Recognition from Thermal Images with Edge Computing System",
+      "authors": "D. S. Breland, S. B. Skriubakken, Aveen Dayal, A. Jha, P. K. Yalavarthy, Linga Reddy Cenkeramaddi",
+      "venue": "IEEE Sensors Journal",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/JSEN.2021.3061608",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    },
+    {
+      "title": "A Novel Angle Estimation for mmWave FMCW Radars using Machine Learning",
+      "authors": "Linga Reddy Cenkeramaddi, P. K. Rai, Aveen Dayal, J. Bhatia, A. Pandya, J. Soumya, A. Kumar, A. Jha",
+      "venue": "IEEE Sensors Journal",
+      "year": 2021,
+      "type": "journal",
+      "citations": null,
+      "doi": "10.1109/JSEN.2021.3058268",
+      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en"
+    }
+  ]
+}

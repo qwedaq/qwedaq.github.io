@@ -1,0 +1,21 @@
+{
+  "name": "aveen-reliable-ai-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync:scholar": "python3 scripts/sync_scholar.py --force",
+    "validate": "python3 scripts/validate_data.py && python3 scripts/test_sync_logic.py"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "7.0.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

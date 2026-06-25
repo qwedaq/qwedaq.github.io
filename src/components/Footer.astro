@@ -1,0 +1,11 @@
+---
+import { profile } from '../data/profile';
+---
+<footer class="site-footer">
+  <nav class="footer-links footer-links-only" aria-label="Contact and profile links">
+    <a href={`mailto:${profile.email}`}>{profile.email}</a>
+    <a href={profile.scholar} target="_blank" rel="noreferrer">Google Scholar</a>
+    <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
+    <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+  </nav>
+</footer>
