@@ -2,8 +2,6 @@ name: Quarterly Google Scholar sync
 
 on:
   schedule:
-    # Runs monthly to keep scheduled workflows active. The script queries Scholar
-    # only in January, April, July, and October.
     - cron: '17 8 1 * *'
       timezone: 'Asia/Kolkata'
   workflow_dispatch:
@@ -28,6 +26,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Test title deduplication logic
+        run: python3 scripts/test_sync_logic.py
+
       - name: Synchronize Google Scholar data
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
@@ -37,6 +38,9 @@ jobs:
           else
             python3 scripts/sync_scholar.py
           fi
+
+      - name: Validate one complete record per paper
+        run: python3 scripts/validate_data.py
 
       - name: Maintain monthly workflow activity
         run: |
