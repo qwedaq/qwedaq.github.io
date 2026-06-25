@@ -263,8 +263,7 @@ h3 { line-height: 1.25; }
   .hero h1 { font-size: clamp(3.3rem, 16vw, 5rem); }
   .framework-section, .news-section, .gallery-section { padding-block: 5rem; }
   .framework { display: none; }
-  .framework-mobile { display: block; }
-  .mobile-core { margin-bottom: 1rem; padding: 1.3rem; border-radius: 16px; background: var(--ink); color: var(--paper); font-family: var(--serif); font-size: 1.7rem; text-align: center; }
+  .framework-mobile { display: block; margin-top: 1.35rem; }
   .framework-mobile details { border-top: 1px solid var(--line); }
   .framework-mobile details:last-child { border-bottom: 1px solid var(--line); }
   .framework-mobile summary { display: grid; grid-template-columns: 42px 1fr; gap: .5rem; padding: 1rem 0; cursor: pointer; list-style: none; }

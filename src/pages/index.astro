@@ -22,7 +22,7 @@ const archiveYears = Object.keys(archive).sort((a, b) => Number(b) - Number(a));
       <h1>Aveen <span>Dayal</span></h1>
       <p class="hero-statement">Building AI systems that can be understood, evaluated, trusted, and deployed beyond controlled settings.</p>
       <p class="hero-description">
-        I work across multimodal, generative, and language models, studying how their behaviour can be interpreted, how they generalize under distribution shift, how their outputs can be evaluated and attributed, and how inference can be made more efficient.
+        I work across multimodal, generative, and language models, studying how their behaviour can be interpreted, how they generalize under distribution shift, how their outputs can be evaluated and attributed, how digital content can be protected, and how inference can be made more efficient.
       </p>
       <div class="button-row">
         <a class="button button-primary" href="#reliable-ai">Explore my research</a>
@@ -33,7 +33,7 @@ const archiveYears = Object.keys(archive).sort((a, b) => Number(b) - Number(a));
 
     <div class="portrait-wrap" data-reveal>
       <div class="portrait-offset" aria-hidden="true"></div>
-      <img class="portrait" src={profile.headshot} alt="Portrait of Aveen Dayal" width="1220" height="480" />
+      <img class="portrait" src={profile.headshot} alt="Portrait of Aveen Dayal" width="1220" height="980" />
       <div class="portrait-caption">
         <span class="status-dot" aria-hidden="true"></span>
         Bengaluru, India
@@ -80,8 +80,7 @@ const archiveYears = Object.keys(archive).sort((a, b) => Number(b) - Number(a));
         </div>
       </div>
 
-      <div class="framework-mobile" data-reveal>
-        <div class="mobile-core">Reliable AI Systems</div>
+      <div class="framework-mobile" role="region" aria-label="Research directions contributing to reliable AI" data-reveal>
         {researchPillars.map((pillar) => (
           <details>
             <summary><span>{pillar.index}</span><strong>{pillar.title}</strong></summary>
