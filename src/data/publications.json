@@ -2,11 +2,11 @@
   "profile": {
     "authorId": "KqkN9IgAAAAJ",
     "scholarUrl": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en",
-    "lastSynced": "2026-06-25T16:13:36Z",
+    "lastSynced": "2026-07-01T06:58:05Z",
     "source": "Google Scholar via SerpApi; verified local bibliography is preserved and duplicate title variants are merged."
   },
   "metrics": {
-    "citations": 927,
+    "citations": 950,
     "hIndex": 15,
     "i10Index": 15
   },
@@ -18,10 +18,10 @@
       "year": 2026,
       "type": "conference",
       "citations": 1,
-      "paper": "https://arxiv.org/abs/2512.17514",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:KlAtU1dfN6UC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17725807756492777138",
-      "citationId": "KqkN9IgAAAAJ:KlAtU1dfN6UC"
+      "citationId": "KqkN9IgAAAAJ:KlAtU1dfN6UC",
+      "paper": "https://arxiv.org/abs/2512.17514"
     },
     {
       "title": "Bridging the Domain Gap in Small Multimodal Models: A Dual-level Alignment Perspective",
@@ -29,8 +29,9 @@
       "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
       "year": 2026,
       "type": "conference",
-      "citations": null,
-      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en",
+      "citations": 0,
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:YOwf2qJgpHMC",
+      "citedBy": null,
       "citationId": "KqkN9IgAAAAJ:YOwf2qJgpHMC"
     },
     {
@@ -39,11 +40,11 @@
       "venue": "IEEE Transactions on Image Processing",
       "year": 2025,
       "type": "journal",
-      "citations": 25,
-      "doi": "10.1109/TIP.2025.3532094",
+      "citations": 28,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:3fE2CSJIrl8C",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5747424987240286825",
-      "citationId": "KqkN9IgAAAAJ:3fE2CSJIrl8C"
+      "citationId": "KqkN9IgAAAAJ:3fE2CSJIrl8C",
+      "doi": "10.1109/TIP.2025.3532094"
     },
     {
       "title": "An Ensemble Approach Using RNN, LSTM, BiLSTM and DistilBERT for Sarcasm Detection in News Headlines",
@@ -53,6 +54,7 @@
       "type": "conference",
       "citations": 0,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:ULOm3_A8WrAC",
+      "citedBy": null,
       "citationId": "KqkN9IgAAAAJ:ULOm3_A8WrAC"
     },
     {
@@ -94,11 +96,11 @@
       "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
       "year": 2023,
       "type": "conference",
-      "citations": 78,
-      "paper": "https://arxiv.org/abs/2311.08503",
+      "citations": 81,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:LkGwnXOMwfcC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5764374234433092123",
-      "citationId": "KqkN9IgAAAAJ:LkGwnXOMwfcC"
+      "citationId": "KqkN9IgAAAAJ:LkGwnXOMwfcC",
+      "paper": "https://arxiv.org/abs/2311.08503"
     },
     {
       "title": "Adversarial Unsupervised Domain Adaptation for Hand Gesture Recognition using Thermal Images",
@@ -107,10 +109,10 @@
       "year": 2023,
       "type": "journal",
       "citations": 68,
-      "doi": "10.1109/JSEN.2023.3235379",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:WF5omc3nYNoC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14060600905683844236",
-      "citationId": "KqkN9IgAAAAJ:WF5omc3nYNoC"
+      "citationId": "KqkN9IgAAAAJ:WF5omc3nYNoC",
+      "doi": "10.1109/JSEN.2023.3235379"
     },
     {
       "title": "Edge-Distributed Fusion of Camera-LiDAR for Robust Moving Object Localization",
@@ -119,10 +121,10 @@
       "year": 2023,
       "type": "journal",
       "citations": 2,
-      "doi": "10.1109/ACCESS.2023.3295212",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:YsMSGLbcyi4C",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1491327095801008743",
-      "citationId": "KqkN9IgAAAAJ:YsMSGLbcyi4C"
+      "citationId": "KqkN9IgAAAAJ:YsMSGLbcyi4C",
+      "doi": "10.1109/ACCESS.2023.3295212"
     },
     {
       "title": "Motor Bearing Fault Classification using Laser Sensor and Light Weight CNN",
@@ -130,8 +132,9 @@
       "venue": "IEEE International Symposium on Smart Electronic Systems (IEEE-iSES)",
       "year": 2023,
       "type": "conference",
-      "citations": null,
-      "scholar": "https://scholar.google.com/citations?user=KqkN9IgAAAAJ&hl=en",
+      "citations": 0,
+      "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:roLk4NBRz8UC",
+      "citedBy": null,
       "citationId": "KqkN9IgAAAAJ:roLk4NBRz8UC"
     },
     {
@@ -141,10 +144,10 @@
       "year": 2022,
       "type": "journal",
       "citations": 44,
-      "doi": "10.1016/j.asoc.2022.109241",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:eQOLeE2rZwMC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14107317014474971680",
-      "citationId": "KqkN9IgAAAAJ:eQOLeE2rZwMC"
+      "citationId": "KqkN9IgAAAAJ:eQOLeE2rZwMC",
+      "doi": "10.1016/j.asoc.2022.109241"
     },
     {
       "title": "Lightweight deep convolution neural network for background sound classification in speech signals",
@@ -153,10 +156,10 @@
       "year": 2022,
       "type": "journal",
       "citations": 17,
-      "doi": "10.1121/10.0010257",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:W7OEmFMy1HYC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8306523021081711450",
-      "citationId": "KqkN9IgAAAAJ:W7OEmFMy1HYC"
+      "citationId": "KqkN9IgAAAAJ:W7OEmFMy1HYC",
+      "doi": "10.1121/10.0010257"
     },
     {
       "title": "Anam-Net: Anamorphic Depth Embedding-Based Lightweight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images",
@@ -164,11 +167,11 @@
       "venue": "IEEE Transactions on Neural Networks and Learning Systems",
       "year": 2021,
       "type": "journal",
-      "citations": 212,
-      "doi": "10.1109/TNNLS.2021.3054746",
+      "citations": 213,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:d1gkVwhDpl0C",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15093424331653449416",
-      "citationId": "KqkN9IgAAAAJ:d1gkVwhDpl0C"
+      "citationId": "KqkN9IgAAAAJ:d1gkVwhDpl0C",
+      "doi": "10.1109/TNNLS.2021.3054746"
     },
     {
       "title": "Mini-COVIDNet: Efficient Light Weight Deep Neural Network for Ultrasound based Point-of-Care Testing of COVID-19",
@@ -176,11 +179,11 @@
       "venue": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
       "year": 2021,
       "type": "journal",
-      "citations": 91,
-      "doi": "10.1109/TUFFC.2021.3068190",
+      "citations": 92,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:IjCSPb-OGe4C",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3759790672063139026",
-      "citationId": "KqkN9IgAAAAJ:IjCSPb-OGe4C"
+      "citationId": "KqkN9IgAAAAJ:IjCSPb-OGe4C",
+      "doi": "10.1109/TUFFC.2021.3068190"
     },
     {
       "title": "Deep Learning based Sign Language Digits Recognition from Thermal Images with Edge Computing System",
@@ -188,11 +191,11 @@
       "venue": "IEEE Sensors Journal",
       "year": 2021,
       "type": "journal",
-      "citations": 88,
-      "doi": "10.1109/JSEN.2021.3061608",
+      "citations": 89,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:UeHWp8X0CEIC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12563481223068224736",
-      "citationId": "KqkN9IgAAAAJ:UeHWp8X0CEIC"
+      "citationId": "KqkN9IgAAAAJ:UeHWp8X0CEIC",
+      "doi": "10.1109/JSEN.2021.3061608"
     },
     {
       "title": "Robust Hand Gestures Recognition Using a Deep CNN and Thermal Images",
@@ -200,11 +203,11 @@
       "venue": "IEEE Sensors Journal",
       "year": 2021,
       "type": "journal",
-      "citations": 68,
-      "doi": "10.1109/JSEN.2021.3119977",
+      "citations": 69,
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:Y0pCki6q_DkC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13893063322522771904",
-      "citationId": "KqkN9IgAAAAJ:Y0pCki6q_DkC"
+      "citationId": "KqkN9IgAAAAJ:Y0pCki6q_DkC",
+      "doi": "10.1109/JSEN.2021.3119977"
     },
     {
       "title": "Design and Implementation of Deep Learning Based Contactless Authentication System Using Hand Gestures",
@@ -213,10 +216,10 @@
       "year": 2021,
       "type": "journal",
       "citations": 54,
-      "doi": "10.3390/electronics10020182",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:u-x6o8ySG0sC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9051386201496578655",
-      "citationId": "KqkN9IgAAAAJ:u-x6o8ySG0sC"
+      "citationId": "KqkN9IgAAAAJ:u-x6o8ySG0sC",
+      "doi": "10.3390/electronics10020182"
     },
     {
       "title": "A Novel Angle Estimation for mmWave FMCW Radars using Machine Learning",
@@ -225,10 +228,10 @@
       "year": 2021,
       "type": "journal",
       "citations": 39,
-      "doi": "10.1109/JSEN.2021.3058268",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:9yKSN-GCB0IC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14691322401526106453",
-      "citationId": "KqkN9IgAAAAJ:9yKSN-GCB0IC"
+      "citationId": "KqkN9IgAAAAJ:9yKSN-GCB0IC",
+      "doi": "10.1109/JSEN.2021.3058268"
     },
     {
       "title": "Classification of targets using statistical features from range FFT of mmWave FMCW radars",
@@ -237,10 +240,10 @@
       "year": 2021,
       "type": "journal",
       "citations": 39,
-      "doi": "10.3390/electronics10161965",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:Tyk-4Ss8FVUC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6813103566784146318",
-      "citationId": "KqkN9IgAAAAJ:Tyk-4Ss8FVUC"
+      "citationId": "KqkN9IgAAAAJ:Tyk-4Ss8FVUC",
+      "doi": "10.3390/electronics10161965"
     },
     {
       "title": "Object Classification Technique for mmWave FMCW Radars using Range-FFT Features",
@@ -249,10 +252,10 @@
       "year": 2021,
       "type": "conference",
       "citations": 34,
-      "doi": "10.1109/COMSNETS51098.2021.9352894",
       "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=KqkN9IgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=KqkN9IgAAAAJ:2osOgNQ5qMEC",
       "citedBy": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4761912033463254618",
-      "citationId": "KqkN9IgAAAAJ:2osOgNQ5qMEC"
+      "citationId": "KqkN9IgAAAAJ:2osOgNQ5qMEC",
+      "doi": "10.1109/COMSNETS51098.2021.9352894"
     }
   ]
 }
